@@ -1,0 +1,57 @@
+import java.util.*;
+class Arithmetic
+{
+	void arth()
+	{
+		int a,b,sum,sub,mul,div,mod;
+		System.out.println("enter a,b values:");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		b=sc.nextInt();
+		sum=a+b;
+		sub=a-b;
+		mul=a*b;
+		div=a/b;
+		mod=a%b;
+		System.out.println("addition: " +sum);
+		System.out.println("subtration: " +sub);
+		System.out.println("mutiplication: " +mul);
+		System.out.println("division: " +div);
+		System.out.println("modulus: " +mod);
+
+	}
+}
+class EvenOdd extends Arithmetic
+{
+	void check()
+	{
+		
+	int num;
+	System.out.println("enter num value:");
+	Scanner sc=new Scanner(System.in);
+	num=sc.nextInt();
+	if(num%2==0)
+		System.out.println(num+"is even number");
+	else
+		System.out.println(num+"is odd number");
+}
+}
+public class InheritanceUsingMethods {
+	public static void main(String[] args) {
+		int a,b,temp;
+		System.out.println("enter a,b values:");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		b=sc.nextInt();
+		System.out.println("before swapping a:"+a+"b:"+b);
+		temp=a;
+		a=b;
+		b=temp;
+		System.out.println("after swapping a:"+a+"b:"+b);
+		EvenOdd co=new EvenOdd();
+		co.arth();
+		co.check();
+	}
+	}
+
+
